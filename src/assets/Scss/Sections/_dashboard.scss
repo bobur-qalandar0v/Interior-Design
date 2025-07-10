@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&family=Ysabeau+SC:wght@1..1000&display=swap");
+
+.dashboard {
+  width: 100%;
+
+  &__swiper {
+    position: relative;
+  }
+
+  .interior-design {
+    &-body {
+      width: 100%;
+      position: absolute;
+      bottom: 80px;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    &-title {
+      color: #fff;
+      font-family: "Playfair Display SC";
+      font-size: 30px;
+
+      > h1 {
+        font-weight: 500;
+        text-transform: capitalize;
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .first__btn,
+      .second__btn {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 24px;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 18px;
+
+        background: $primary-color;
+        border: 2px solid $primary-color;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background-color: transparent;
+          border: 2px solid #fff;
+        }
+      }
+    }
+  }
+
+  .who-we-are {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border: 1px solid;
+    border-image-source: linear-gradient(
+      90.31deg,
+      #072e97 0.33%,
+      rgb(19, 55, 144) 14.62%,
+      #0f3dba 41.41%,
+      #133287 63.89%
+    );
+    margin-top: 160px;
+    border-image-slice: 1;
+    display: flex;
+    justify-content: center;
+
+    &__wrap {
+      position: absolute;
+      top: -60px;
+      width: 90%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 15px;
+      border-radius: 2px;
+      background: linear-gradient(
+        90.31deg,
+        #072e97 0.33%,
+        rgb(19, 55, 144) 14.62%,
+        #0f3dba 41.41%,
+        #133287 63.89%
+      );
+    }
+
+    &__left {
+      width: 46%;
+      height: 85%;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__right {
+      width: 50%;
+      height: 85%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      padding-right: 50px;
+    }
+
+    .title__wrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .right__subtitle {
+      font-family: "Niconne";
+      font-size: 45px;
+      color: #9a8f8f;
+      margin-bottom: -24px;
+    }
+
+    .right__title {
+      font-family: "Playfair";
+      font-size: 70px;
+      color: #fff;
+    }
+
+    .content__wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .content__top {
+      font-size: 18px;
+      word-spacing: 2px;
+      color: #fff;
+      line-height: 27px;
+      letter-spacing: 1px;
+    }
+
+    .content__bottom {
+      color: #fff;
+      font-weight: bolder;
+      font-size: 18px;
+      line-height: 26px;
+      word-spacing: 1px;
+    }
+
+    .right__btn {
+      display: flex;
+      align-items: center;
+    }
+
+    .content__link {
+      text-decoration: none;
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 10px 24px;
+      font-size: 18px;
+      font-weight: bolder;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #fff;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .interior-design-studio {
+    position: relative;
+    margin: 120px 0 160px 0;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-color;
+
+    .quotation-icon {
+      position: absolute;
+      top: 30px;
+      left: 330px;
+    }
+
+    &__text {
+      text-align: center;
+      width: 50%;
+      font-size: 30px;
+      line-height: 40px;
+      font-style: italic;
+      font-family: PlayFair !important;
+      color: #fff;
+    }
+  }
+
+  .consultation {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 520px;
+    margin-top: 100px !important;
+
+    &__left {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px;
+      gap: 30px;
+    }
+
+    .title-top {
+      font-family: "Niconne";
+      font-size: 50px;
+      color: #9a8f8f;
+      margin-bottom: -22px;
+    }
+
+    .title-bottom {
+      font-family: "PlayFair";
+      font-size: 60px;
+      color: $primary-color;
+    }
+
+    .content-item {
+      font-size: 18px;
+      word-spacing: 1px;
+      line-height: 28px;
+      color: #0e0e0e;
+    }
+
+    &__btn {
+      display: flex;
+    }
+
+    .get-consultation {
+      text-decoration: none;
+      color: $primary-color;
+      border: 2px solid $primary-color;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: bolder;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: $primary-color;
+        color: #fff;
+      }
+    }
+
+    &__right {
+      width: 50%;
+      height: 100%;
+      border: 1px solid $primary-color;
+    }
+
+    .right__img {
+      width: 680px;
+      height: 100%;
+      position: absolute;
+      top: -40px;
+      right: 50px;
+      object-fit: cover;
+    }
+  }
+
+  .video-wrap {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title-top {
+      font-family: "Niconne";
+      font-size: 50px;
+      color: #9a8f8f;
+      margin-bottom: -20px;
+    }
+
+    .title-bottom {
+      font-family: "PlayFair";
+      font-size: 60px;
+      color: $primary-color;
+    }
+
+    .title-between {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-top: -5px;
+    }
+  }
+
+  .complate-projects {
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+    margin-top: 100px;
+    background: linear-gradient(
+      90.31deg,
+      #072e97 0.33%,
+      rgb(19, 55, 144) 14.62%,
+      #0f3dba 41.41%,
+      #133287 63.89%
+    );
+
+    .swiper-wrapper {
+      height: 420px;
+    }
+
+    &-top {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+
+    &-title {
+      font-family: "Niconne";
+      font-size: 60px;
+      color: #fff;
+    }
+
+    &-swiper {
+      width: 100%;
+      padding: 0 30px;
+    }
+
+    .projects-swiper {
+      padding: 20px 0;
+    }
+
+    .project-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 15px;
+
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+        cursor: grab;
+
+        &:hover {
+          transform: scale(1.01);
+        }
+      }
+
+      h2 {
+        color: white;
+        font-family: Playfair;
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+
+    .swiper-pagination-horizontal {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      bottom: 10px !important;
+      z-index: 10000;
+      width: 100%;
+      height: 22px;
+      opacity: 1;
+      margin: 0 5px;
+      transition: all 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: white;
+      transform: scale(1.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 50px 0;
+
+    &-swiper {
+      padding: 0 20px;
+    }
+
+    .project-slide {
+      img {
+        height: 250px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+    }
+    // }
+  }
+}
