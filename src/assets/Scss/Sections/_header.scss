@@ -22,8 +22,11 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 15%;
   }
 }
 
@@ -32,8 +35,8 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: end;
+  gap: 25px;
   list-style: none;
 
   .header__link {
@@ -50,6 +53,25 @@
     &:hover {
       background-color: #112f80c6;
       border: 2px solid #112f80c6;
+    }
+  }
+
+  .header__login {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 8px 16px;
+    white-space: nowrap;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+      border: 2px solid $primary-color;
     }
   }
 }

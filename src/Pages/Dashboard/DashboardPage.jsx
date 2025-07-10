@@ -97,7 +97,7 @@ function DashboardPage() {
 
         <div className="interior-design-studio">
           <span className="quotation-icon">
-            <QuotationIcon />
+            <QuotationIcon fill="#fff" />
           </span>
           <div className="interior-design-studio__text">
             Our Interior Design Studio is your creative partner, thoughtfully
@@ -250,6 +250,81 @@ function DashboardPage() {
                 </div>
               </SwiperSlide>
             </Swiper>
+          </div>
+        </div>
+
+        <div className="showroom">
+          <div className="showroom-left">
+            <div className="left-video">
+              <ReactPlayer
+                src="https://www.theartisticelements.com/wp-content/uploads/2024/06/schowroom_video.mp4?_=2"
+                controls
+                muted
+                loop={true}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+          </div>
+          <div className="showroom-right">
+            <div className="right-title">
+              <div className="title-top">High-End Home Decor</div>
+              <div className="title-bottom">Showroom</div>
+            </div>
+            <div className="right-content">
+              Whether you are furnishing a room, redecorating an entire home, or
+              simply want to style your bookshelves, our Showroom has it all. We
+              offer only the best in high-end home decor, providing products
+              from the most exclusive and luxurious brands from around the
+              world. The Showroom has a complete offering of furniture, home
+              accessories, art, lighting, rugs, drapery, pillows, bedding,
+              mirrors, and framing. Our exceptional personalized service will
+              provide your every need, offering design consultation with our
+              licensed Interior Designers as well as white-glove delivery,
+              setup, and installation.
+            </div>
+            <div className="right-btns">
+              <Link to="/" className="btn-left">
+                GO TO THE SHOWROOM
+              </Link>
+              <Link to="/" className="btn-right">
+                SHOP ONLINE
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="imagine">
+          <div className="imagine-back"></div>
+          <div className="imagine-title">Imagine The Possibilities</div>
+        </div>
+
+        <div className="imagine-after">
+          <span className="imagine-after-icon">
+            <QuotationIcon fill="#1b3fa3" />
+          </span>
+          <div className="imagine-after-content">
+            We provide a turnkey solution using the latest in technology to
+            allow you to visualize your design throughout the process.
+          </div>
+        </div>
+
+        <div className="our-world">
+          <div className="our-world-left">
+            <div className="left-title">Our World</div>
+            <div className="left-content">
+              If you are passionate about Interior Design and the Luxury
+              Lifestyle, take a look into Our World. Check out our latest blogs
+              and social media to see what inspires us, current projects, and
+              our take on design elements.
+            </div>
+            <Link className="left-btn">READ BLOG</Link>
+          </div>
+          <div className="our-world-right">
+            <img src="/our-world.png" alt="ourworld" />
           </div>
         </div>
       </div>

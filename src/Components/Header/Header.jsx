@@ -8,10 +8,10 @@ function Header() {
       <div className="container">
         <header className="header">
           <nav className="header__nav">
+            <Link className="header__logo" to="/">
+              <img src="/Logo.png" alt="logo" width={100} height={100} />
+            </Link>
             <ul className="header__ul">
-              <Link className="header__logo" to="/">
-                <img src="/Logo.png" alt="logo" width={100} height={100} />
-              </Link>
               <li>
                 <Link className="header__link" to="/">
                   Proyektlar
@@ -40,6 +40,11 @@ function Header() {
               <li>
                 <Link className="header__link" to="/">
                   Kontaktlarimiz
+                </Link>
+              </li>
+              <li>
+                <Link className="header__login" to="/">
+                  Kirish
                 </Link>
               </li>
             </ul>

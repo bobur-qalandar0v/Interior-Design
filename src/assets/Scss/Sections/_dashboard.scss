@@ -314,7 +314,7 @@
   .complate-projects {
     position: relative;
     width: 100%;
-    padding: 60px 0;
+    padding: 30px 0;
     margin-top: 100px;
     background: linear-gradient(
       90.31deg,
@@ -336,7 +336,7 @@
 
     &-title {
       font-family: "Niconne";
-      font-size: 60px;
+      font-size: 70px;
       color: #fff;
     }
 
@@ -414,6 +414,210 @@
         font-size: 20px;
       }
     }
-    // }
+  }
+
+  .showroom {
+    margin-top: 100px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    &-left {
+      width: 55%;
+      height: 100%;
+      border: 1px solid $primary-color;
+      padding: 60px 40px 15px 40px;
+    }
+
+    .left-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: inline;
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 40%;
+      height: 100%;
+    }
+
+    .title-top {
+      font-family: "Niconne";
+      font-size: 40px;
+      color: #9a8f8f;
+      margin-bottom: -30px;
+    }
+
+    .title-bottom {
+      font-family: "PlayFair";
+      font-size: 70px;
+      color: $primary-color;
+    }
+
+    .right-content {
+      line-height: 27px;
+      font-size: 18px;
+    }
+
+    .right-btns {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-left {
+      color: #fff;
+      font-weight: bolder;
+      font-size: 20px;
+      padding: 10px 16px;
+      text-decoration: none;
+      border: 2px solid $primary-color;
+      background: linear-gradient(
+        90.31deg,
+        #072e97 0.33%,
+        rgb(19, 55, 144) 14.62%,
+        #0f3dba 41.41%,
+        #133287 63.89%
+      );
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background: #fff;
+        color: $primary-color;
+        border: 2px solid $primary-color;
+      }
+    }
+
+    .btn-right {
+      color: $primary-color;
+      font-weight: bolder;
+      font-size: 20px;
+      padding: 10px 16px;
+      text-decoration: none;
+      border: 2px solid $primary-color;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background: #072e97 0.33%;
+        color: #fff;
+        border: 2px solid #fff;
+      }
+    }
+  }
+
+  .imagine {
+    position: relative;
+    width: 100%;
+    height: 540px;
+    margin-top: 130px;
+
+    &-back {
+      background-image: url("../../../../public/ComplateProject4.png");
+      width: 100%;
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &-title {
+      position: absolute;
+      bottom: 35px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-family: "Playfair";
+      font-size: 60px;
+    }
+  }
+
+  .imagine-after {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-content {
+      font-family: Playfair;
+      font-style: italic;
+      font-size: 30px;
+      text-align: center;
+      width: 770px;
+    }
+
+    &-icon {
+      position: absolute;
+      top: 20px;
+      left: 260px;
+    }
+  }
+
+  .our-world {
+    width: 100%;
+    height: 700px;
+    margin-top: 100px;
+    border: 1px solid $primary-color;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 85px 55px 40px 55px;
+
+    &-left {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      gap: 30px;
+    }
+
+    .left-title {
+      font-size: 70px;
+      font-family: "Playfair";
+      color: $primary-color;
+    }
+
+    .left-content {
+      line-height: 26px;
+      font-size: 19px;
+    }
+
+    .left-btn {
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid $primary-color;
+      font-size: 19px;
+      padding: 14px 46px;
+      font-weight: bolder;
+      color: $primary-color;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: $primary-color;
+        color: #fff;
+      }
+    }
+
+    &-right {
+      width: 60%;
+      height: 100%;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
