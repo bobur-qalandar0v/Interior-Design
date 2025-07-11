@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Niconne&family=Ysabeau+SC:wght@1..1000&display=swap");
-
 .dashboard {
   width: 100%;
 
@@ -618,6 +616,143 @@
         height: 100%;
         object-fit: cover;
       }
+    }
+  }
+
+  .testimonials {
+    margin-top: 120px;
+    width: 100%;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      text-align: center;
+      color: $primary-color;
+      font-weight: 500;
+      font-size: 60px;
+      font-family: Playfair;
+    }
+
+    &-swiper {
+      margin-top: 30px;
+      height: 100%;
+    }
+
+    .swiper-wrapper {
+      height: 80%;
+      width: 100%;
+      position: relative;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+
+      > .swiper-pagination {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+        padding-left: 50px;
+        position: absolute;
+        bottom: 40px;
+      }
+
+      .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        border: 3px solid $secondary-color;
+        background: transparent;
+        opacity: 1;
+
+        &-active {
+          background-color: $secondary-color !important;
+        }
+      }
+    }
+
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+      padding: 0 100px;
+    }
+
+    .slide-wrap {
+      display: flex;
+      gap: 100px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide-img {
+      width: 50%;
+      height: 100%;
+    }
+
+    .slider__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slide-content {
+      position: relative;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+    }
+
+    .content-title {
+      display: flex;
+      align-items: center;
+      padding-top: 15px;
+    }
+
+    .slide-content-title {
+      font-style: italic;
+      font-family: Lato;
+      font-size: 30px;
+      font-weight: 300;
+    }
+
+    .quotation-icon {
+      position: absolute;
+      left: -34px;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .content-text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .first {
+        font-family: Lato;
+        line-height: 26px;
+        font-size: 17px;
+      }
+
+      .subtitle {
+        font-style: italic;
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .map-container {
+    margin-top: 170px;
+    width: 100%;
+    height: 500px;
+
+    .map-iframe{
+      width: 100%;
+      height: 100%;
     }
   }
 }

@@ -6,6 +6,7 @@ import EmailIcon from "./assets/Icons/EmailIcon";
 import FaceBookIcon from "./assets/Icons/FaceBookIcon";
 import InstagramIcon from "./assets/Icons/InstagramIcon";
 import TelegramIcon from "./assets/Icons/TelegramIcon";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           ))}
         </Routes>
       </main>
+      <Footer />
     </>
   );
 }

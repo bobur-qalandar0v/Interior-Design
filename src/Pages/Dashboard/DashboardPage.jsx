@@ -6,6 +6,8 @@ import ReactPlayer from "react-player";
 import VideoTitleIcon from "../../assets/Icons/VideoTitleIcon";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import TestimonialsSwiper from "./TestimonialsSwiper";
+import EmbedMap from "./EmbedMap";
 
 function DashboardPage() {
   const videoRef = useRef();
@@ -327,6 +329,10 @@ function DashboardPage() {
             <img src="/our-world.png" alt="ourworld" />
           </div>
         </div>
+
+        <TestimonialsSwiper />
+
+        <EmbedMap />
       </div>
     </div>
   );

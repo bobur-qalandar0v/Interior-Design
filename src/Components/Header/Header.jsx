@@ -44,7 +44,7 @@ function Header() {
               </li>
               <li>
                 <Link className="header__login" to="/">
-                  Kirish
+                 Ro'yxatdan o'tish
                 </Link>
               </li>
             </ul>

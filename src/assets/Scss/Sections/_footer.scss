@@ -1,0 +1,169 @@
+.footer {
+  width: 100%;
+  height: 250px;
+  background-color: $primary-color;
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px 0 10px;
+    width: 100%;
+    height: 200px;
+  }
+
+  &-left {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 20px;
+  }
+
+  &-right {
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    height: 100%;
+  }
+
+  .artistic-elements,
+  .featured-links,
+  .showroom-hours,
+  .online-shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+  }
+
+  .artistic-elements {
+    &-title {
+      color: #fff;
+      font-weight: 500;
+      font-size: 23px;
+    }
+
+    &-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .location,
+    .tel,
+    .email {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      > a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+
+    .email {
+      > a {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .showroom-hours {
+    &-title {
+      color: #fff;
+      font-weight: 500;
+      font-size: 23px;
+    }
+
+    &-links {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .time-icon {
+      width: 30px;
+      height: 20px;
+    }
+
+    .working-time {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &-text {
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+
+    .working-networks {
+      margin-top: 10px;
+      display: flex;
+      align-items: end;
+      gap: 20px;
+    }
+  }
+
+  .featured-links {
+    &-title {
+      color: #fff;
+      font-weight: 500;
+      font-size: 23px;
+    }
+
+    .links-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .first,
+    .second,
+    .last {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+
+  .online-shop {
+    &-title {
+      color: #fff;
+      font-weight: 500;
+      font-size: 23px;
+    }
+
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    &-text {
+      color: #fff;
+      font-size: 18px;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: #fff;
+      border: 2px solid #fff;
+      width: fit-content;
+      padding: 10px 60px;
+      font-size: 20px;
+      font-weight: bolder;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #fff;
+        color: $primary-color;
+      }
+    }
+  }
+}
