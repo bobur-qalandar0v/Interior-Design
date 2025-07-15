@@ -42,11 +42,6 @@ function Header() {
                   Kontaktlarimiz
                 </Link>
               </li>
-              <li>
-                <Link className="header__login" to="/">
-                 Ro'yxatdan o'tish
-                </Link>
-              </li>
             </ul>
           </nav>
         </header>
