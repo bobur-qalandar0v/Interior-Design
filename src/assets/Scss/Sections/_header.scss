@@ -1,5 +1,5 @@
 .header__background {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 100;
   width: 100%;
@@ -9,9 +9,9 @@
 }
 
 .header {
-  width: 100%;
+  width: 88rem;
   height: 120px;
-  position: absolute;
+  position: fixed;
   z-index: 200;
   top: 0;
   display: flex;

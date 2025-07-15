@@ -34,7 +34,7 @@ function Footer() {
                     HJ2V+JH6 Kirgiz Yap, 220100, Urgench, Xorazm Region
                   </a>
                 </div>
-                <div className="tel">
+                <div className="tel" >
                   <span className="tel-icon">
                     <PhoneIcon />
                   </span>

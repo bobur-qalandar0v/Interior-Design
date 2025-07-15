@@ -13,7 +13,7 @@ function Header() {
             </Link>
             <ul className="header__ul">
               <li>
-                <Link className="header__link" to="/">
+                <Link className="header__link" to="/our-work">
                   Proyektlar
                 </Link>
               </li>
