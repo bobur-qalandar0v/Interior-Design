@@ -1,7 +1,10 @@
 import React from "react";
 import QuotationIcon from "../../assets/Icons/QuotationIcon";
+import { Link } from "react-router-dom";
+import { projects } from "../../constants/data";
 
 function OurWorks() {
+  console.log(projects);
   return (
     <>
       <div className="projects">
@@ -19,134 +22,24 @@ function OurWorks() {
               </p>
             </div>
             <div className="projects-list">
-              <div className="projects-list__item">
-                <div className="projects-list__img">
-                  <img src="/ProjectsImg/project-img.png" alt="project-img" />
+              {projects.map((item) => (
+                <div className="projects-list__item" key={item.id}>
+                  <Link to={`/${item.id}`} className="projects-list__img">
+                    <img src={item.image} alt="project-img" />
+                  </Link>
+                  <div className="projects-list__title">
+                    <Link to={`/${item.id}`} className="title">
+                      {item.title}
+                    </Link>
+                  </div>
+                  <div className="projects-list__text">
+                    <p className="top">{item.address}</p>
+                    <p className="bottom">
+                      {item.size} {item.rooms}
+                    </p>
+                  </div>
                 </div>
-                <div className="projects-list__title">
-                  <h3 className="title">Coastal Luxury</h3>
-                </div>
-                <div className="projects-list__text">
-                  <p className="top">Cabo San Lucas, Mexico</p>
-                  <p className="bottom">
-                    21,928 sq.ft. 7 bed, 7 bath, 2 half-bath
-                  </p>
-                </div>
-              </div>
-              <div className="projects-list__item">
-                <div className="projects-list__img">
-                  <img
-                    src="/ProjectsImg/project-img.png"
-                    alt="project-img"
-                    width={440}
-                    height={250}
-                  />
-                </div>
-                <div className="projects-list__title">
-                  <h3 className="title">Coastal Luxury</h3>
-                </div>
-                <div className="projects-list__text">
-                  <p className="top">Cabo San Lucas, Mexico</p>
-                  <p className="bottom">
-                    21,928 sq.ft. 7 bed, 7 bath, 2 half-bath
-                  </p>
-                </div>
-              </div>
-              <div className="projects-list__item">
-                <div className="projects-list__img">
-                  <img
-                    src="/ProjectsImg/project-img.png"
-                    alt="project-img"
-                    width={440}
-                    height={250}
-                  />
-                </div>
-                <div className="projects-list__title">
-                  <h3 className="title">Coastal Luxury</h3>
-                </div>
-                <div className="projects-list__text">
-                  <p className="top">Cabo San Lucas, Mexico</p>
-                  <p className="bottom">
-                    21,928 sq.ft. 7 bed, 7 bath, 2 half-bath
-                  </p>
-                </div>
-              </div>
-              <div className="projects-list__item">
-                <div className="projects-list__img">
-                  <img
-                    src="/ProjectsImg/project-img.png"
-                    alt="project-img"
-                    width={440}
-                    height={250}
-                  />
-                </div>
-                <div className="projects-list__title">
-                  <h3 className="title">Coastal Luxury</h3>
-                </div>
-                <div className="projects-list__text">
-                  <p className="top">Cabo San Lucas, Mexico</p>
-                  <p className="bottom">
-                    21,928 sq.ft. 7 bed, 7 bath, 2 half-bath
-                  </p>
-                </div>
-              </div>
-              <div className="projects-list__item">
-                <div className="projects-list__img">
-                  <img
-                    src="/ProjectsImg/project-img.png"
-                    alt="project-img"
-                    width={440}
-                    height={250}
-                  />
-                </div>
-                <div className="projects-list__title">
-                  <h3 className="title">Coastal Luxury</h3>
-                </div>
-                <div className="projects-list__text">
-                  <p className="top">Cabo San Lucas, Mexico</p>
-                  <p className="bottom">
-                    21,928 sq.ft. 7 bed, 7 bath, 2 half-bath
-                  </p>
-                </div>
-              </div>
-              <div className="projects-list__item">
-                <div className="projects-list__img">
-                  <img
-                    src="/ProjectsImg/project-img.png"
-                    alt="project-img"
-                    width={440}
-                    height={250}
-                  />
-                </div>
-                <div className="projects-list__title">
-                  <h3 className="title">Coastal Luxury</h3>
-                </div>
-                <div className="projects-list__text">
-                  <p className="top">Cabo San Lucas, Mexico</p>
-                  <p className="bottom">
-                    21,928 sq.ft. 7 bed, 7 bath, 2 half-bath
-                  </p>
-                </div>
-              </div>
-              <div className="projects-list__item">
-                <div className="projects-list__img">
-                  <img
-                    src="/ProjectsImg/project-img.png"
-                    alt="project-img"
-                    width={440}
-                    height={250}
-                  />
-                </div>
-                <div className="projects-list__title">
-                  <h3 className="title">Coastal Luxury</h3>
-                </div>
-                <div className="projects-list__text">
-                  <p className="top">Cabo San Lucas, Mexico</p>
-                  <p className="bottom">
-                    21,928 sq.ft. 7 bed, 7 bath, 2 half-bath
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

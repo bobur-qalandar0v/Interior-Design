@@ -7,10 +7,12 @@ import FaceBookIcon from "./assets/Icons/FaceBookIcon";
 import InstagramIcon from "./assets/Icons/InstagramIcon";
 import TelegramIcon from "./assets/Icons/TelegramIcon";
 import Footer from "./Components/Footer/Footer";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Header />
       <main className="main">
         <div className="networks">

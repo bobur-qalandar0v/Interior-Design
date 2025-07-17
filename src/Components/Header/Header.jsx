@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
+  const Location = useLocation();
+
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [activeButton, setActiveButton] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +25,17 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  useEffect(() => {
+    switch (Location.pathname) {
+      case "/":
+        setActiveButton(null);
+        break;
+      case "/our-work":
+        setActiveButton(1);
+        break;
+    }
+  }, [Location.pathname]);
+
   return (
     <>
       <header className={`header ${showHeader ? "visible" : "hidden"}`}>
@@ -33,7 +47,12 @@ function Header() {
               </Link>
               <ul className="header__ul">
                 <li>
-                  <Link className="header__link" to="/our-work">
+                  <Link
+                    className={`header__link ${
+                      activeButton === 1 ? "active" : ""
+                    }`}
+                    to="/our-work"
+                  >
                     Proyektlar
                   </Link>
                 </li>

@@ -67,13 +67,189 @@
       font-weight: 500;
       font-family: "Playfair Display SC";
       text-transform: capitalize;
+      text-decoration: none;
     }
 
-    &__text{
-        color: #0e0e0e;
-        font-weight: 600;
+    &__text {
+      color: #0e0e0e;
+      font-weight: 600;
+      font-family: "Lato";
+      font-size: 16px;
+    }
+  }
+
+  &-item {
+    margin-top: 150px;
+    width: 100%;
+    height: 83vh;
+
+    &__wrap {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      padding-bottom: 50px;
+    }
+
+    &__left {
+      width: 45%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      scrollbar-width: none;
+    }
+
+    .left-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .title-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .main-title {
+      font-size: 26px;
+      color: $primary-color;
+      font-weight: 500;
+      font-family: "Playfair Display SC";
+    }
+
+    .contents {
+      &-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      &-location,
+      &-type,
+      &-size,
+      &-rooms {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+    }
+
+    .location,
+    .type,
+    .size,
+    .rooms {
+      font-size: 17px;
+      font-weight: bold;
+
+      &-value {
+        font-size: 17px;
+      }
+    }
+
+    .problem,
+    .solutions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      &-title {
+        font-family: "Dancing Script";
+        font-size: 24px;
+      }
+
+      .text {
         font-family: "Lato";
-        font-size: 16px;
+        font-size: 17px;
+        font-weight: 300;
+      }
+    }
+
+    .scope-of-work {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .scope-of-work__title {
+      font-family: "Dancing Script";
+      font-size: 24px;
+    }
+
+    .left-ul {
+      list-style: disc;
+      margin-left: 17px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      > li {
+        font-size: 18px;
+        font-family: "Lato";
+        font-weight: 300;
+      }
+    }
+
+    &__right {
+      width: 55%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      scrollbar-width: none;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .right-top__img {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 100%;
+    }
+
+    .top-img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .right-center__img {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .centery-top,
+    .centery-bottom {
+      display: flex;
+      gap: 7px;
+      height: 500px;
+
+      &__img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .centery-center {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      &__img {
+        width: 100%;
+      }
+    }
+
+    .right-bottom__img {
+      width: 100%;
+    }
+
+    .bottom-img {
+      width: 100%;
     }
   }
 }
