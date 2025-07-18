@@ -1,0 +1,218 @@
+.our-team {
+  margin-top: 120px;
+
+  &__top {
+    width: 100%;
+    height: 240px;
+    background: linear-gradient(
+      90.31deg,
+      #103086 0.33%,
+      rgb(12, 44, 125) 14.62%,
+      #143798 41.41%,
+      #0a2369 63.89%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__border {
+    width: 100%;
+    height: 350px;
+    margin-top: 200px;
+    padding: 20px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid $primary-color;
+
+    .border-title {
+      font-family: "Dancing Script";
+      font-weight: normal;
+      font-size: 80px;
+      color: #c8bdbd;
+    }
+
+    .border-text {
+      text-align: center;
+      width: 80%;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 20px;
+      font-family: "Lato";
+    }
+  }
+
+  &__wrap {
+    margin-top: 200px;
+  }
+
+  .our-founders {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .bottom {
+    margin-left: 200px;
+    align-items: start !important;
+  }
+
+  .top,
+  .bottom {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+    }
+
+    .text {
+      font-family: "Dancing Script";
+      font-size: 64px;
+      color: #3f3e3e;
+      transform: rotate(-5.9deg);
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+      width: 70%;
+      gap: 30px;
+    }
+
+    .person-img__wrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .img-wrap {
+      width: 320px;
+      height: 305px;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content-wrap {
+      background-color: #f0ece9;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .person-content__wrap {
+      font-family: "Lato";
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 25px;
+      max-width: 500px;
+    }
+  }
+
+  &__title {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .title-wrap {
+      display: flex;
+      position: relative;
+    }
+
+    .title-text {
+      font-family: "Dancing Script";
+      font-size: 64px;
+      color: #3f3e3e;
+    }
+
+    .left-arrow,
+    .right-arrow {
+      position: absolute;
+    }
+
+    .left-arrow {
+      left: -130px;
+      bottom: -20px;
+    }
+
+    .right-arrow {
+      right: -95px;
+      bottom: -40px;
+    }
+  }
+
+  .persons-card__wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+
+  .persons-card__item {
+    width: 100%;
+    cursor: pointer;
+
+    .img-wrap {
+      width: 100%;
+      height: 340px;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .person-info {
+      background-color: #f0ece9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      padding: 10px 0;
+    }
+
+    .name {
+      font-family: "Lato";
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .type-of-work {
+      font-family: "Lato";
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .click {
+      font-family: "Lato";
+      opacity: 0.6;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .icon {
+      margin-bottom: 3px;
+    }
+  }
+}

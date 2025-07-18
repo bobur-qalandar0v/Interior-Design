@@ -90,3 +90,78 @@ export const projects = [
     type: "Condo, Remodel",
   },
 ];
+
+export const persons = [
+  {
+    id: 1,
+    image: "/OurTeam/person1.png",
+    name: "Megan Luecke",
+    typeOfWork: "Interior Designer",
+  },
+  {
+    id: 2,
+    image: "/OurTeam/person2.png",
+    name: "Diana Timakova",
+    typeOfWork: "Interior Designer",
+  },
+  {
+    id: 3,
+    image: "/OurTeam/person1.png",
+    name: "Megan Luecke",
+    typeOfWork: "Interior Designer",
+  },
+  {
+    id: 4,
+    image: "/OurTeam/person2.png",
+    name: "Diana Timakova",
+    typeOfWork: "Interior Designer",
+  },
+  {
+    id: 5,
+    image: "/OurTeam/person1.png",
+    name: "Megan Luecke",
+    typeOfWork: "Interior Designer",
+  },
+  {
+    id: 6,
+    image: "/OurTeam/person2.png",
+    name: "Diana Timakova",
+    typeOfWork: "Interior Designer",
+  },
+  {
+    id: 7,
+    image: "/OurTeam/person1.png",
+    name: "Megan Luecke",
+    typeOfWork: "Interior Designer",
+  },
+  {
+    id: 8,
+    image: "/OurTeam/person2.png",
+    name: "Diana Timakova",
+    typeOfWork: "Interior Designer",
+  },
+  {
+    id: 9,
+    image: "/OurTeam/person1.png",
+    name: "Megan Luecke",
+    typeOfWork: "Interior Designer",
+  },
+  {
+    id: 10,
+    image: "/OurTeam/person2.png",
+    name: "Diana Timakova",
+    typeOfWork: "Interior Designer",
+  },
+  {
+    id: 11,
+    image: "/OurTeam/person1.png",
+    name: "Megan Luecke",
+    typeOfWork: "Interior Designer",
+  },
+  {
+    id: 12,
+    image: "/OurTeam/person2.png",
+    name: "Diana Timakova",
+    typeOfWork: "Interior Designer",
+  },
+];

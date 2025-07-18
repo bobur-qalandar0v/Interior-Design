@@ -1,4 +1,5 @@
 import DashboardPage from "../Pages/Dashboard/DashboardPage";
+import OurTeam from "../Pages/OurTeam/OurTeam";
 import OurWorks from "../Pages/OurWorks/OurWorks";
 import ProjectItem from "../Pages/ProjectItem/ProjectItem";
 
@@ -17,5 +18,10 @@ export const routes = [
     id: 3,
     path: "/:id",
     element: <ProjectItem />,
+  },
+  {
+    id: 4,
+    path: "/our-team",
+    element: <OurTeam />,
   },
 ];

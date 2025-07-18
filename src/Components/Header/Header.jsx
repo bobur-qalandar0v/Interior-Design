@@ -33,6 +33,9 @@ function Header() {
       case "/our-work":
         setActiveButton(1);
         break;
+      case "/our-team":
+        setActiveButton(2);
+        break;
     }
   }, [Location.pathname]);
 
@@ -72,7 +75,12 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link className="header__link" to="/">
+                  <Link
+                    className={`header__link ${
+                      activeButton === 2 ? "active" : ""
+                    }`}
+                    to="/our-team"
+                  >
                     Bizning jamoa
                   </Link>
                 </li>
