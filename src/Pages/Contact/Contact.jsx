@@ -1,8 +1,44 @@
 import { Button, Checkbox, Col, Form, Input, Row } from "antd";
-import React from "react";
+import React, { useState } from "react";
 import EmbedMap from "../Dashboard/EmbedMap";
+import InputTel from "./InputTel";
 
 function Contact() {
+  const [value, setValue] = useState("");
+
+  const formatPhoneNumber = (value) => {
+    let numbers = value.replace(/\D/g, "");
+
+    if (numbers === "") return "";
+
+    // Agar 88 bilan boshlansa -> 99888
+    if (numbers.startsWith("88")) {
+      numbers = "998" + numbers;
+    } else if (!numbers.startsWith("998")) {
+      numbers = "998" + numbers;
+    }
+
+    if (numbers.length > 12) {
+      numbers = numbers.slice(0, 12);
+    }
+
+    let formatted = `+${numbers.slice(0, 3)}`;
+    if (numbers.length > 3) formatted += `(${numbers.slice(3, 5)}`;
+    if (numbers.length > 5) formatted += `)${numbers.slice(5, 8)}`;
+    if (numbers.length > 8) formatted += `-${numbers.slice(8, 10)}`;
+    if (numbers.length > 10) formatted += `-${numbers.slice(10, 12)}`;
+
+    return formatted;
+  };
+
+  const handleChange = (e) => {
+    const rawValue = e.target.value;
+
+    // Raqamni formatlab state-ga o'rnatamiz
+    const formatted = formatPhoneNumber(rawValue);
+    setValue(formatted);
+  };
+
   return (
     <div className="contact">
       <div className="contact__top"></div>
@@ -71,7 +107,13 @@ function Contact() {
                   <Input className="last-name__input" />
                 </Form.Item>
                 <Form.Item className="phone-number__wrap" label="Phone number">
-                  <Input className="phone-number__input" />
+                  <Input
+                    className="phone-number__input"
+                    placeholder="+998(__)___-__-__"
+                    onChange={handleChange}
+                    value={value}
+                  />
+                  {/* <InputTel /> */}
                 </Form.Item>
               </div>
             </div>
@@ -118,7 +160,9 @@ function Contact() {
 
             <div className="button-wrap">
               <Form.Item className="submit-btn__wrap">
-                <Button className="submit__btn">Submit</Button>
+                <Button className="submit__btn" htmlType="submit">
+                  Submit
+                </Button>
               </Form.Item>
             </div>
           </Form>
