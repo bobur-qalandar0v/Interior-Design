@@ -207,7 +207,7 @@ function DashboardPage() {
                 <div className="project-slide">
                   <img
                     className="projects-img"
-                    src="/ComplateProject3.png"
+                    src="/ComplateProject1.png"
                     alt="project-img"
                   />
                   <h2 className="project-slide-subtitle">
@@ -219,7 +219,7 @@ function DashboardPage() {
                 <div className="project-slide">
                   <img
                     className="projects-img"
-                    src="/ComplateProject4.png"
+                    src="/ComplateProject2.png"
                     alt="project-img"
                   />
                   <h2 className="project-slide-subtitle">
@@ -231,7 +231,7 @@ function DashboardPage() {
                 <div className="project-slide">
                   <img
                     className="projects-img"
-                    src="/ComplateProject5.png"
+                    src="/ComplateProject1.png"
                     alt="project-img"
                   />
                   <h2 className="project-slide-subtitle">
@@ -243,7 +243,7 @@ function DashboardPage() {
                 <div className="project-slide">
                   <img
                     className="projects-img"
-                    src="/ComplateProject6.png"
+                    src="/ComplateProject2.png"
                     alt="project-img"
                   />
                   <h2 className="project-slide-subtitle">

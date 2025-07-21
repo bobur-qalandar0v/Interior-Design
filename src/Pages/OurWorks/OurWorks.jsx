@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { projects } from "../../constants/data";
 
 function OurWorks() {
-  console.log(projects);
   return (
     <>
       <div className="projects">

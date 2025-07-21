@@ -29,16 +29,16 @@ function SwiperComponent() {
           <img className="swiper__img" src="/swiper2.jpg" alt="swiper-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="swiper__img" src="/swiper3.jpg" alt="swiper-img" />
+          <img className="swiper__img" src="/swiper1.jpg" alt="swiper-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="swiper__img" src="/swiper4.jpg" alt="swiper-img" />
+          <img className="swiper__img" src="/swiper2.jpg" alt="swiper-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="swiper__img" src="/swiper5.jpg" alt="swiper-img" />
+          <img className="swiper__img" src="/swiper1.jpg" alt="swiper-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="swiper__img" src="/swiper6.jpg" alt="swiper-img" />
+          <img className="swiper__img" src="/swiper2.jpg" alt="swiper-img" />
         </SwiperSlide>
       </Swiper>
     </>

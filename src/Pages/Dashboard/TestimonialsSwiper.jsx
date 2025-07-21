@@ -87,7 +87,7 @@ function TestimonialsSwiper() {
               <div className="slide-img">
                 <img
                   className="slider__img"
-                  src="/swiper3.jpg"
+                  src="/swiper1.jpg"
                   alt="swiper-img"
                 />
               </div>
@@ -116,7 +116,7 @@ function TestimonialsSwiper() {
               <div className="slide-img">
                 <img
                   className="slider__img"
-                  src="/swiper4.jpg"
+                  src="/swiper2.jpg"
                   alt="swiper-img"
                 />
               </div>
@@ -150,7 +150,7 @@ function TestimonialsSwiper() {
               <div className="slide-img">
                 <img
                   className="slider__img"
-                  src="/swiper5.jpg"
+                  src="/swiper1.jpg"
                   alt="swiper-img"
                 />
               </div>
@@ -184,7 +184,7 @@ function TestimonialsSwiper() {
               <div className="slide-img">
                 <img
                   className="slider__img"
-                  src="/swiper6.jpg"
+                  src="/swiper1.jpg"
                   alt="swiper-img"
                 />
               </div>
