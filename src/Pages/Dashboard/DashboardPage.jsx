@@ -332,7 +332,9 @@ function DashboardPage() {
 
         <TestimonialsSwiper />
 
-        <EmbedMap />
+        <div className="map-container">
+          <EmbedMap />
+        </div>
       </div>
     </div>
   );
