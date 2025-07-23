@@ -12,10 +12,10 @@ function TestimonialsSwiper() {
           spaceBetween={30}
           speed={2000}
           loop={true}
-          //   autoplay={{
-          //     delay: 3000,
-          //     disableOnInteraction: false,
-          //   }}
+          // autoplay={{
+          //   delay: 3000,
+          //   disableOnInteraction: false,
+          // }}
           pagination={{
             clickable: true,
           }}

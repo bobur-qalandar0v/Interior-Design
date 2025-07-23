@@ -57,6 +57,7 @@ function DashboardPage() {
           </div>
         </div>
       </div>
+
       <div className="container">
         <div className="who-we-are">
           <div className="who-we-are__wrap">
@@ -89,24 +90,32 @@ function DashboardPage() {
                 </div>
               </div>
               <div className="right__btn">
-                <Link to="/" className="content__link">
+                <Link to="/our-team" className="content__link">
                   LEARN MORE
                 </Link>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="interior-design-studio">
-          <span className="quotation-icon">
-            <QuotationIcon fill="#fff" />
-          </span>
-          <div className="interior-design-studio__text">
-            Our Interior Design Studio is your creative partner, thoughtfully
-            crafting your dreams into reality.
+      <div className="interior-design-studio">
+        <div className="container">
+          <div className="studio__wrap">
+            <div className="content__wrap">
+              <span className="quotation-icon">
+                <QuotationIcon fill="#fff" />
+              </span>
+              <div className="interior-design-studio__text">
+                Our Interior Design Studio is your creative partner,
+                thoughtfully crafting your dreams into reality.
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
+      <div className="container">
         <div className="consultation">
           <div className="consultation__left">
             <div className="consultation__title">
@@ -125,7 +134,9 @@ function DashboardPage() {
               </p>
             </div>
             <div className="consultation__btn">
-              <Link className="get-consultation">GET CONSULTATION</Link>
+              <Link to="/contact" className="get-consultation">
+                GET CONSULTATION
+              </Link>
             </div>
           </div>
           <div className="consultation__right">
@@ -136,7 +147,9 @@ function DashboardPage() {
             />
           </div>
         </div>
+      </div>
 
+      <div className="container">
         <div className="video-wrap">
           <div className="video-wrap__title">
             <div className="title-top">Our latest completed project:</div>
@@ -154,23 +167,22 @@ function DashboardPage() {
               ref={videoRef}
               src="https://www.theartisticelements.com/wp-content/uploads/2024/09/Boca-Beach-House-1.mp4?_=1"
               controls
-              playsInline
               muted
               width="100%"
               height="100%"
             />
           </div>
         </div>
+      </div>
 
+      <div className="container">
         <div className="complate-projects">
           <div className="complate-projects-top">
             <div className="complate-projects-title">Completed Projects</div>
           </div>
           <div className="complate-projects-swiper">
             <Swiper
-              slidesPerView={2}
               slidesPerGroup={1}
-              spaceBetween={30}
               loop={true}
               speed={2000}
               autoplay={{
@@ -179,6 +191,11 @@ function DashboardPage() {
               }}
               pagination={{ clickable: true }}
               modules={[Autoplay, Pagination]}
+              breakpoints={{
+                0: { slidesPerView: 1, spaceBetween: 0 },
+                845: { slidesPerView: 2 },
+                1000: { spaceBetween: 30 },
+              }}
               className="swiper__wrapper"
             >
               <SwiperSlide className="swiper__slide">
@@ -254,7 +271,9 @@ function DashboardPage() {
             </Swiper>
           </div>
         </div>
+      </div>
 
+      <div className="container">
         <div className="showroom">
           <div className="showroom-left">
             <div className="left-video">
@@ -271,6 +290,7 @@ function DashboardPage() {
               />
             </div>
           </div>
+
           <div className="showroom-right">
             <div className="right-title">
               <div className="title-top">High-End Home Decor</div>
@@ -298,22 +318,28 @@ function DashboardPage() {
             </div>
           </div>
         </div>
+      </div>
 
+      <div className="container">
         <div className="imagine">
           <div className="imagine-back"></div>
           <div className="imagine-title">Imagine The Possibilities</div>
         </div>
 
         <div className="imagine-after">
-          <span className="imagine-after-icon">
-            <QuotationIcon fill="#1b3fa3" />
-          </span>
-          <div className="imagine-after-content">
-            We provide a turnkey solution using the latest in technology to
-            allow you to visualize your design throughout the process.
+          <div className="imagine-after__wrap">
+            <span className="imagine-after-icon">
+              <QuotationIcon fill="#1b3fa3" />
+            </span>
+            <div className="imagine-after-content">
+              We provide a turnkey solution using the latest in technology to
+              allow you to visualize your design throughout the process.
+            </div>
           </div>
         </div>
+      </div>
 
+      <div className="container">
         <div className="our-world">
           <div className="our-world-left">
             <div className="left-title">Our World</div>
@@ -336,6 +362,7 @@ function DashboardPage() {
           <EmbedMap />
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 }

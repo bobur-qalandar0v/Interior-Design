@@ -29,10 +29,32 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .burger-menu {
+      display: none;
+
+      @media screen and (max-width: 1000px) {
+        display: block;
+      }
+    }
   }
 
   &__logo {
     width: 15%;
+
+    @media screen and (max-width: 1030px) {
+      width: 12%;
+    }
+
+    &__img {
+      width: 100px;
+      height: 100px;
+
+      @media screen and (max-width: 1030px) {
+        width: 80px;
+        height: 80px;
+      }
+    }
   }
 }
 
@@ -44,6 +66,22 @@
   justify-content: end;
   gap: 40px;
   list-style: none;
+
+  @media screen and (max-width: 1420px) {
+    gap: 30px;
+  }
+
+  @media screen and (max-width: 1360px) {
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    gap: 15px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 
   .header__link {
     text-decoration: none;
@@ -64,6 +102,19 @@
     &:hover {
       background-color: #fff;
       color: $primary-color;
+    }
+
+    @media screen and (max-width: 1305px) {
+      font-size: 17px;
+    }
+
+    @media screen and (max-width: 1170px) {
+      padding: 10px 7px;
+      font-weight: normal;
+    }
+
+    @media screen and (max-width: 1170px) {
+      font-size: 16px;
     }
   }
 }

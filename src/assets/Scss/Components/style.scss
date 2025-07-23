@@ -2,6 +2,14 @@
   width: 100%;
   height: 800px;
 
+  @media screen and (max-width: 870px) {
+    height: 700px;
+  }
+
+  @media screen and (max-width: 780px) {
+    height: 600px;
+  }
+
   .swiper-pagination-horizontal {
     bottom: 40px !important;
     display: flex;
@@ -31,5 +39,17 @@
 
   &-active {
     background-color: #fff !important;
+  }
+
+  @media screen and (max-width: 680px) {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff;
+  }
+
+  @media screen and (max-width: 510px) {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #fff;
   }
 }

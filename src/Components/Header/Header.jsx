@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import BurgerMenuIcon from "../../assets/Icons/BurgerMenuIcon";
+import { Drawer } from "antd";
 
 function Header() {
   const Location = useLocation();
@@ -7,6 +9,15 @@ function Header() {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [activeButton, setActiveButton] = useState(null);
+  const [open, setOpen] = useState(false);
+
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,7 +60,7 @@ function Header() {
           <div className="header__wrap">
             <nav className="header__nav">
               <Link className="header__logo" to="/">
-                <img src="/Logo.png" alt="logo" width={100} height={100} />
+                <img src="/Logo.png" alt="logo" className="header__logo__img" />
               </Link>
               <ul className="header__ul">
                 <li>
@@ -98,9 +109,19 @@ function Header() {
                   </Link>
                 </li>
               </ul>
+              <div className="burger-menu">
+                <button className="burger-btn" onClick={showDrawer}>
+                  <BurgerMenuIcon />
+                </button>
+              </div>
             </nav>
           </div>
         </div>
+        <Drawer open={open} onClose={onClose}>
+          <p>Contents</p>
+          <p>Contents</p>
+          <p>Contents</p>
+        </Drawer>
       </header>
     </>
   );

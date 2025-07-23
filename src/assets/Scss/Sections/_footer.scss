@@ -3,6 +3,10 @@
   height: 250px;
   background-color: #001745;
 
+  @media screen and (max-width: 870px) {
+    height: auto;
+  }
+
   &-wrap {
     display: flex;
     justify-content: space-between;
@@ -10,6 +14,15 @@
     padding: 30px 10px 0 10px;
     width: 100%;
     height: 200px;
+
+    @media screen and (max-width: 930px) {
+      padding: 30px 0;
+    }
+
+    @media screen and (max-width: 870px) {
+      flex-direction: column;
+      height: auto;
+    }
   }
 
   &-left {
@@ -19,6 +32,17 @@
     align-items: center;
     justify-content: start;
     padding-top: 20px;
+
+    @media screen and (max-width: 1150px) {
+      width: 15%;
+    }
+
+    @media screen and (max-width: 870px) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &-right {
@@ -26,6 +50,28 @@
     gap: 30px;
     width: 80%;
     height: 100%;
+
+    @media screen and (max-width: 1215px) {
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 1180px) {
+      gap: 10px;
+    }
+
+    @media screen and (max-width: 1150px) {
+      width: 85%;
+    }
+
+    @media screen and (max-width: 1070px) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 870px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
   }
 
   .artistic-elements,
@@ -39,19 +85,62 @@
   }
 
   .artistic-elements {
+    @media screen and (max-width: 870px) {
+      align-items: center;
+    }
     &-title {
       color: #fff;
       font-weight: 500;
       font-size: 23px;
+
+      @media screen and (max-width: 1365px) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 870px) {
+        font-size: 25px;
+      }
     }
 
     &-links {
       display: flex;
       flex-direction: column;
       gap: 15px;
+      margin-top: 10px;
+
+      @media screen and (max-width: 870px) {
+        align-items: center;
+      }
     }
 
-    .location,
+    .location {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      > a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 300;
+        font-size: 16px;
+
+        @media screen and (max-width: 870px) {
+          font-size: 17px;
+        }
+      }
+
+      &-icon {
+        @media screen and (max-width: 870px) {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 870px) {
+        text-align: center;
+        justify-content: center;
+      }
+    }
+
     .tel,
     .email {
       display: flex;
@@ -63,6 +152,16 @@
         color: #fff;
         font-weight: 300;
         font-size: 16px;
+
+        @media screen and (max-width: 870px) {
+          font-size: 17px;
+        }
+      }
+
+      &-icon {
+        @media screen and (max-width: 870px) {
+          display: none;
+        }
       }
     }
 
@@ -74,21 +173,43 @@
   }
 
   .showroom-hours {
+    @media screen and (max-width: 870px) {
+      align-items: center;
+    }
+
     &-title {
       color: #fff;
       font-weight: 500;
       font-size: 23px;
+
+      @media screen and (max-width: 1365px) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 870px) {
+        font-size: 25px;
+      }
     }
 
     &-links {
       display: flex;
       flex-direction: column;
       gap: 28px;
+      margin-top: 10px;
+
+      @media screen and (max-width: 870px) {
+        align-items: center;
+        gap: 20px;
+      }
     }
 
     .time-icon {
       width: 30px;
       height: 20px;
+
+      @media screen and (max-width: 870px) {
+        display: none;
+      }
     }
 
     .working-time {
@@ -99,6 +220,11 @@
       &-text {
         font-size: 16px;
         color: #fff;
+
+        @media screen and (max-width: 870px) {
+          text-align: center;
+          font-size: 17px;
+        }
       }
     }
 
@@ -111,10 +237,17 @@
   }
 
   .featured-links {
+    @media screen and (max-width: 1080px) {
+      display: none;
+    }
     &-title {
       color: #fff;
       font-weight: 500;
       font-size: 23px;
+
+      @media screen and (max-width: 1365px) {
+        font-size: 20px;
+      }
     }
 
     .links-wrap {
@@ -133,21 +266,42 @@
   }
 
   .online-shop {
+    @media screen and (max-width: 870px) {
+      align-items: center;
+    }
+
     &-title {
       color: #fff;
       font-weight: 500;
       font-size: 23px;
+
+      @media screen and (max-width: 1365px) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 870px) {
+        font-size: 25px;
+      }
     }
 
     &-wrap {
       display: flex;
       flex-direction: column;
       gap: 25px;
+      margin-top: 10px;
+
+      @media screen and (max-width: 870px) {
+        align-items: center;
+      }
     }
 
     &-text {
       color: #fff;
       font-size: 18px;
+
+      @media screen and (max-width: 870px) {
+        text-align: center;
+      }
     }
 
     &-link {
@@ -163,6 +317,11 @@
       &:hover {
         background-color: #fff;
         color: $primary-color;
+      }
+
+      @media screen and (max-width: 1365px) {
+        padding: 10px 40px;
+        font-size: 18px;
       }
     }
   }
