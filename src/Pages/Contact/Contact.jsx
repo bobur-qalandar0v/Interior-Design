@@ -136,6 +136,7 @@ function Contact() {
                     placeholder="+998(__)___-__-__"
                     onChange={handleChange}
                     value={value}
+                    type="phone"
                   />
                 </Form.Item>
               </div>
