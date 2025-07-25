@@ -2,6 +2,9 @@
   &-wrap {
     width: 100%;
     margin-top: 200px;
+    @media screen and (max-width: 1000px) {
+      margin-top: 120px;
+    }
   }
 
   &-title {
@@ -11,17 +14,42 @@
     align-items: center;
     position: relative;
 
+    @media screen and (max-width: 970px) {
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 525px) {
+      gap: 30px;
+    }
+
     .title {
       font-family: "Dancing Script";
       font-size: 80px;
       color: #3f3e3e;
       font-weight: normal;
+
+      @media screen and (max-width: 800px) {
+        font-size: 70px;
+      }
+
+      @media screen and (max-width: 660px) {
+        font-size: 60px;
+      }
+
+      @media screen and (max-width: 585px) {
+        font-size: 50px;
+      }
     }
 
     .icon {
       position: absolute;
       bottom: 15px;
       left: -30px;
+
+      @media screen and (max-width: 970px) {
+        top: -25px;
+        left: 50%;
+      }
     }
 
     .text {
@@ -34,6 +62,19 @@
       font-style: italic;
       font-size: 32px;
       color: #0e0e0e;
+
+      @media screen and (max-width: 800px) {
+        font-size: 28px;
+      }
+
+      @media screen and (max-width: 660px) {
+        font-size: 25px;
+      }
+
+      @media screen and (max-width: 585px) {
+        font-size: 22px;
+        text-align: center;
+      }
     }
   }
 
@@ -43,6 +84,19 @@
     gap: 15px;
     margin: 70px 0;
 
+    @media screen and (max-width: 970px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 615px) {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 50px 0;
+      gap: 0;
+    }
+
+    @media screen and (max-width: 520px) {
+    }
+
     &__item {
       display: flex;
       flex-direction: column;
@@ -51,8 +105,39 @@
     }
 
     &__img {
-      width: 440px;
       height: 250px;
+
+      @media screen and (max-width: 1120px) {
+        height: 230px;
+      }
+
+      @media screen and (max-width: 1040px) {
+        height: 200px;
+      }
+
+      @media screen and (max-width: 970px) {
+        height: 250px;
+      }
+
+      @media screen and (max-width: 790px) {
+        height: 230px;
+      }
+
+      @media screen and (max-width: 700px) {
+        height: 200px;
+      }
+
+      @media screen and (max-width: 615px) {
+        height: 300px;
+      }
+
+      @media screen and (max-width: 485px) {
+        height: 250px;
+      }
+
+      @media screen and (max-width: 400px) {
+        height: 220px;
+      }
 
       > img {
         width: 100%;
@@ -68,6 +153,34 @@
       font-family: "Playfair Display SC";
       text-transform: capitalize;
       text-decoration: none;
+
+      @media screen and (max-width: 1265px) {
+        font-size: 30px;
+      }
+
+      @media screen and (max-width: 1185px) {
+        font-size: 28px;
+      }
+
+      @media screen and (max-width: 1120px) {
+        font-size: 26px;
+      }
+
+      @media screen and (max-width: 1040px) {
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: 670px) {
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: 615px) {
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: 485px) {
+        font-size: 22px;
+      }
     }
 
     &__text {

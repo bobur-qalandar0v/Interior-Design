@@ -33,12 +33,14 @@ function OurTeam() {
               </div>
               <div className="top-right">
                 <div className="person-img__wrap">
-                  <div className="img-wrap">
-                    <img src="/OurTeam/our-team1.png" alt="image" />
-                  </div>
-                  <div className="content-wrap">
-                    <h3 className="name">KATYA THOMPSON</h3>
-                    <p>Director of Design, RID 12197</p>
+                  <div className="img-and-content__wrap">
+                    <div className="img-wrap">
+                      <img src="/OurTeam/our-team1.png" alt="image" />
+                    </div>
+                    <div className="content-wrap">
+                      <h3 className="name">KATYA THOMPSON</h3>
+                      <p>Director of Design, RID 12197</p>
+                    </div>
                   </div>
                 </div>
                 <div className="person-content__wrap">
@@ -66,12 +68,14 @@ function OurTeam() {
             <div className="bottom">
               <div className="bottom-center">
                 <div className="person-img__wrap">
-                  <div className="img-wrap">
-                    <img src="/OurTeam/our-team2.png" alt="image" />
-                  </div>
-                  <div className="content-wrap">
-                    <h3 className="name">DREW THOMPSON</h3>
-                    <p>President</p>
+                  <div className="img-and-content__wrap">
+                    <div className="img-wrap">
+                      <img src="/OurTeam/our-team2.png" alt="image" />
+                    </div>
+                    <div className="content-wrap">
+                      <h3 className="name">DREW THOMPSON</h3>
+                      <p>President</p>
+                    </div>
                   </div>
                 </div>
               </div>
