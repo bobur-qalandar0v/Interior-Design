@@ -1,7 +1,6 @@
 import { Button, Checkbox, Col, Form, Input, Row } from "antd";
 import React, { useState } from "react";
 import EmbedMap from "../Dashboard/EmbedMap";
-import InputTel from "./InputTel";
 
 function Contact() {
   const [value, setValue] = useState("");
@@ -45,7 +44,6 @@ function Contact() {
       <div className="container">
         <div className="contact__border">
           <div className="border-title">Contact</div>
-
           <div className="main-wrap">
             <div className="visit-showroom">
               <p className="visit-showroom__title">
@@ -89,7 +87,7 @@ function Contact() {
                   <Input className="first-name__input" />
                 </Form.Item>
                 <Form.Item
-                  className="e-mail__wrap"
+                  className="e-mail__wrap before-show"
                   label="E-mail"
                   name="email"
                   rules={[
@@ -101,11 +99,37 @@ function Contact() {
                 >
                   <Input type="email" className="e-mail__input" />
                 </Form.Item>
-              </div>
-              <div className="right-inputs">
-                <Form.Item className="last-name__wrap" label="Last Name">
+                {/*  */}
+                <Form.Item
+                  className="last-name__wrap after-show"
+                  label="Last Name"
+                >
                   <Input className="last-name__input" />
                 </Form.Item>
+                {/*  */}
+              </div>
+              <div className="right-inputs">
+                <Form.Item
+                  className="last-name__wrap before-show"
+                  label="Last Name"
+                >
+                  <Input className="last-name__input" />
+                </Form.Item>
+                {/*  */}
+                <Form.Item
+                  className="e-mail__wrap after-show"
+                  label="E-mail"
+                  name="email"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Iltimos maydonni to'ldiring!",
+                    },
+                  ]}
+                >
+                  <Input type="email" className="e-mail__input" />
+                </Form.Item>
+                {/*  */}
                 <Form.Item className="phone-number__wrap" label="Phone number">
                   <Input
                     className="phone-number__input"
@@ -113,7 +137,6 @@ function Contact() {
                     onChange={handleChange}
                     value={value}
                   />
-                  {/* <InputTel /> */}
                 </Form.Item>
               </div>
             </div>
