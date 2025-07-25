@@ -227,10 +227,10 @@
     .person-img__wrap {
       display: flex;
       flex-direction: column;
-      width: 100%;
 
       @media screen and (max-width: 800px) {
         align-items: center;
+        width: 100%;
       }
     }
 
