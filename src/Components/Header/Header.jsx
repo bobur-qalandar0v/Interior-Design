@@ -44,11 +44,20 @@ function Header() {
       case "/our-work":
         setActiveButton(1);
         break;
-      case "/our-team":
+      case "/service-type":
         setActiveButton(2);
         break;
-      case "/contact":
+      case "/about-us":
         setActiveButton(3);
+        break;
+      case "/vacancy-order":
+        setActiveButton(4);
+        break;
+      case "/our-team":
+        setActiveButton(5);
+        break;
+      case "/contact":
+        setActiveButton(6);
         break;
     }
   }, [Location.pathname]);
@@ -70,22 +79,7 @@ function Header() {
                     }`}
                     to="/our-work"
                   >
-                    Proyektlar
-                  </Link>
-                </li>
-                <li>
-                  <Link className="header__link" to="/">
-                    Xizmat turlari
-                  </Link>
-                </li>
-                <li>
-                  <Link className="header__link" to="/">
-                    Biz haqimizda
-                  </Link>
-                </li>
-                <li>
-                  <Link className="header__link" to="/">
-                    Vakansiya / Buyurtma berish
+                    <span>Proyektlar</span>
                   </Link>
                 </li>
                 <li>
@@ -93,9 +87,9 @@ function Header() {
                     className={`header__link ${
                       activeButton === 2 ? "active" : ""
                     }`}
-                    to="/our-team"
+                    to="/service-type"
                   >
-                    Bizning jamoa
+                    <span>Xizmat turlari</span>
                   </Link>
                 </li>
                 <li>
@@ -103,9 +97,39 @@ function Header() {
                     className={`header__link ${
                       activeButton === 3 ? "active" : ""
                     }`}
+                    to="/about-us"
+                  >
+                    <span>Biz haqimizda</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className={`header__link ${
+                      activeButton === 4 ? "active" : ""
+                    }`}
+                    to="/vacancy-order"
+                  >
+                    <span>Vakansiya / Buyurtma berish</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className={`header__link ${
+                      activeButton === 5 ? "active" : ""
+                    }`}
+                    to="/our-team"
+                  >
+                    <span>Bizning jamoa</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className={`header__link ${
+                      activeButton === 6 ? "active" : ""
+                    }`}
                     to="/contact"
                   >
-                    Kontaktlarimiz
+                    <span>Kontaktlarimiz</span>
                   </Link>
                 </li>
               </ul>
