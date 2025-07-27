@@ -60,6 +60,8 @@ function Header() {
         setActiveButton(6);
         break;
     }
+
+    setOpen(false);
   }, [Location.pathname]);
 
   return (
@@ -142,9 +144,44 @@ function Header() {
           </div>
         </div>
         <Drawer open={open} onClose={onClose}>
-          <p>Contents</p>
-          <p>Contents</p>
-          <p>Contents</p>
+          <div className="drawer-wrap">
+            <Link
+              className={`drawer-link ${activeButton === 1 ? "active" : ""}`}
+              to="/our-work"
+            >
+              Proyektlar
+            </Link>
+            <Link
+              className={`drawer-link ${activeButton === 2 ? "active" : ""}`}
+              to="/service-type"
+            >
+              Xizmat turlari
+            </Link>
+            <Link
+              className={`drawer-link ${activeButton === 3 ? "active" : ""}`}
+              to="/about-us"
+            >
+              Biz haqimizda
+            </Link>
+            <Link
+              className={`drawer-link ${activeButton === 4 ? "active" : ""}`}
+              to="/vacancy-order"
+            >
+              Vakansiya / buyurtma berish
+            </Link>
+            <Link
+              className={`drawer-link ${activeButton === 5 ? "active" : ""}`}
+              to="/our-team"
+            >
+              Bizing jamoa
+            </Link>
+            <Link
+              className={`drawer-link ${activeButton === 6 ? "active" : ""}`}
+              to="/contact"
+            >
+              Kontaktlarimiz
+            </Link>
+          </div>
         </Drawer>
       </header>
     </>
