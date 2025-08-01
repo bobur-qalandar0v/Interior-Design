@@ -22,9 +22,9 @@ function QuotationIcon({ fill }) {
             y2="10.6589"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#001960" />
-            <stop offset="0.141666" stop-color="#001960" />
-            <stop offset="0.630076" stop-color="#001960" />
+            <stop stopColor="#001960" />
+            <stop offset="0.141666" stopColor="#001960" />
+            <stop offset="0.630076" stopColor="#001960" />
           </linearGradient>
         </defs>
       </svg>

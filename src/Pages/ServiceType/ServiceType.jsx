@@ -16,7 +16,14 @@ function ServiceType() {
         <div className="service-type__border">
           <div className="border-title">Contact us</div>
           <div className="main-wrap">
-            <Form onFinish={onFinish} layout="vertical" className="form">
+            <Form
+              onFinish={onFinish}
+              layout="vertical"
+              className="form"
+              initialValues={{
+                "select-value": "instagram",
+              }}
+            >
               <Form.Item
                 label="Full Name"
                 className="fullname-formitem"
@@ -172,7 +179,7 @@ function ServiceType() {
               <Form.Item label="How did you her about it?" name="select-value">
                 <Select
                   className="select"
-                  defaultValue="instagram"
+                  // defaultValue="instagram"
                   options={[
                     { value: "instagram", label: "Instagram" },
                     { value: "friends", label: "Friends" },

@@ -6,7 +6,7 @@ function TelegramIcon() {
       <svg
         stroke=""
         fill="#001960"
-        stroke-width="0"
+        strokeWidth="0"
         viewBox="0 0 256 256"
         height="32px"
         width="32px"

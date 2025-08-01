@@ -27,9 +27,9 @@ function EmailIcon() {
             y2="16.8013"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="" />
-            <stop offset="0.261458" stop-color="#001960" />
-            <stop offset="0.630076" stop-color="#001960" />
+            <stop stopColor="" />
+            <stop offset="0.261458" stopColor="#001960" />
+            <stop offset="0.630076" stopColor="#001960" />
           </linearGradient>
           <linearGradient
             id="paint1_linear"
@@ -39,9 +39,9 @@ function EmailIcon() {
             y2="17.4259"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#001960" />
-            <stop offset="0.261458" stop-color="#001960" />
-            <stop offset="0.630076" stop-color="#001960" />
+            <stop stopColor="#001960" />
+            <stop offset="0.261458" stopColor="#001960" />
+            <stop offset="0.630076" stopColor="#001960" />
           </linearGradient>
         </defs>
       </svg>
