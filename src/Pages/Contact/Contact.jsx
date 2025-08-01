@@ -1,41 +1,11 @@
 import { Button, Checkbox, Col, Form, Input, Row } from "antd";
 import React, { useState } from "react";
 import EmbedMap from "../Dashboard/EmbedMap";
+import { MaskedInput } from "antd-mask-input";
 
 function Contact() {
-  const [value, setValue] = useState("");
-
-  const formatPhoneNumber = (value) => {
-    let numbers = value.replace(/\D/g, "");
-
-    if (numbers === "") return "";
-
-    // Agar 88 bilan boshlansa -> 99888
-    if (numbers.startsWith("88")) {
-      numbers = "998" + numbers;
-    } else if (!numbers.startsWith("998")) {
-      numbers = "998" + numbers;
-    }
-
-    if (numbers.length > 12) {
-      numbers = numbers.slice(0, 12);
-    }
-
-    let formatted = `+${numbers.slice(0, 3)}`;
-    if (numbers.length > 3) formatted += `(${numbers.slice(3, 5)}`;
-    if (numbers.length > 5) formatted += `)${numbers.slice(5, 8)}`;
-    if (numbers.length > 8) formatted += `-${numbers.slice(8, 10)}`;
-    if (numbers.length > 10) formatted += `-${numbers.slice(10, 12)}`;
-
-    return formatted;
-  };
-
-  const handleChange = (e) => {
-    const rawValue = e.target.value;
-
-    // Raqamni formatlab state-ga o'rnatamiz
-    const formatted = formatPhoneNumber(rawValue);
-    setValue(formatted);
+  const onfinish = (values) => {
+    console.log(values);
   };
 
   return (
@@ -70,13 +40,18 @@ function Contact() {
             </div>
           </div>
 
-          <Form className="form" autoComplete="off" layout="vertical">
+          <Form
+            className="form"
+            autoComplete="off"
+            layout="vertical"
+            onFinish={onfinish}
+          >
             <div className="inputs-wrap">
               <div className="left-inputs">
                 <Form.Item
                   className="first-name__wrap"
                   label="First Name"
-                  name="first-name"
+                  name="firstName"
                   rules={[
                     {
                       required: true,
@@ -103,6 +78,7 @@ function Contact() {
                 <Form.Item
                   className="last-name__wrap after-show"
                   label="Last Name"
+                  name="lastName"
                 >
                   <Input className="last-name__input" />
                 </Form.Item>
@@ -112,6 +88,7 @@ function Contact() {
                 <Form.Item
                   className="last-name__wrap before-show"
                   label="Last Name"
+                  name="lastName"
                 >
                   <Input className="last-name__input" />
                 </Form.Item>
@@ -130,12 +107,14 @@ function Contact() {
                   <Input type="email" className="e-mail__input" />
                 </Form.Item>
                 {/*  */}
-                <Form.Item className="phone-number__wrap" label="Phone number">
-                  <Input
+                <Form.Item
+                  className="phone-number__wrap"
+                  label="Phone number"
+                  name="phoneNumber"
+                >
+                  <MaskedInput
+                    mask="+998(00)000-00-00"
                     className="phone-number__input"
-                    placeholder="+998(__)___-__-__"
-                    onChange={handleChange}
-                    value={value}
                   />
                 </Form.Item>
               </div>

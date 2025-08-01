@@ -229,6 +229,14 @@
     }
   }
 
+  .phone-number__input {
+    // color: #b3b0b0;
+
+    &:focus {
+      color: $primary-color;
+    }
+  }
+
   .checkbox-wrap {
     margin-top: 30px;
 
@@ -254,7 +262,7 @@
 
     &::after {
       width: 8px;
-      height: 13px;
+      height: 13px; 
     }
   }
 
@@ -265,6 +273,7 @@
   .message-input {
     width: 50%;
     height: 200px;
+    font-size: 18px;
     border: 1px solid #ccc;
 
     @media screen and (max-width: 600px) {
